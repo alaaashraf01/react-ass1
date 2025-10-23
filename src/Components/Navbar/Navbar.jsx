@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="container w-[80%] mx-auto">
           <div className="text-white flex justify-between items-center">
             <h1 className="text-4xl font-bold">
-              <Link to="/">Start Framework</Link>
+              <Link to="/react-ass1/">Start Framework</Link>
             </h1>
 
             <div>

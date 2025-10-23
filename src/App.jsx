@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import First from './Components/First/First'
 import About from './Components/About/About'
@@ -11,7 +11,7 @@ import Contact from './Components/Contact/Contact'
 
 function App() {
  
-const routers= createBrowserRouter([{path:'',element:<Layout/>,
+const routers= createBrowserRouter([{path:'/react-ass1/',element:<Layout/>,
   children:[
     {index:true,element:<First/> },
     {path:'about',element:<About/> },
@@ -20,7 +20,7 @@ const routers= createBrowserRouter([{path:'',element:<Layout/>,
   ]
 }])
   return<>
-  <RouterProvider router={routers}>
+  <RouterProvider router={routers} >
 
   </RouterProvider>
   </>
