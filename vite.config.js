@@ -6,17 +6,4 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),   tailwindcss()],
   base:"/react-ass1/",
-  server: {
-    middlewareMode: false,
-    setupMiddlewares(middlewares) {
-      // 👇 أي مسار غير معروف يرجع index.html بدل 404
-      middlewares.use(
-        history({
-          disableDotRule: true,
-          verbose: false,
-        })
-      );
-      return middlewares;
-    },
-  },
 })
